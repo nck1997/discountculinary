@@ -15,6 +15,8 @@ a:hover{text-decoration:underline}
 h1{font-size:2.1rem;line-height:1.12;margin:0 0 10px}
 h2{font-size:1.2rem;margin:28px 0 10px}
 .summary{color:var(--muted);font-size:1.05rem;margin:0 0 22px}
+.hero-photo{width:100%;border-radius:var(--radius);border:1px solid var(--border);
+  margin:0 0 22px;display:block;max-height:520px;object-fit:cover}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 8px}
 .stats div{border:1px solid var(--border);background:var(--card);border-radius:14px;padding:12px;text-align:center}
 .stats span{display:block;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}

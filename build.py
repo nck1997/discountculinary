@@ -99,6 +99,20 @@ def build_index():
         "document.getElementById(\"backBtn\").addEventListener(\"click\",renderList);"
     )
 
+    # show recipe photos on cards + detail view when a recipe has an image
+    src = src.replace(
+        "<div class=\"card-media\">Water St</div>",
+        "'+(recipe.image?'<div class=\"card-media\" style=\"background-image:url('+recipe.image"
+        "+');background-size:cover;background-position:center\"></div>':'<div class=\"card-media\">"
+        "Water St</div>')+'"
+    )
+    src = src.replace(
+        "<div class=\"detail-media\">Recipe Detail</div>",
+        "'+(recipe.image?'<div class=\"detail-media\" style=\"background-image:url('+recipe.image"
+        "+');background-size:cover;background-position:center\"></div>':'<div class=\"detail-media\">"
+        "Recipe Detail</div>')+'"
+    )
+
     (ROOT / "index.html").write_text(src)
     print(f"  index.html  ({len(recipes)} recipes embedded)")
 
@@ -127,6 +141,7 @@ RECIPE_TMPL = """<!DOCTYPE html>
   <p class="kicker">{tags}</p>
   <h1>{title}</h1>
   <p class="summary">{summary}</p>
+  {image_block}
   <div class="stats">
     <div><span>Servings</span><strong>{servings}</strong></div>
     <div><span>Calories / serving</span><strong>{cal_serv}</strong></div>
@@ -167,6 +182,8 @@ def jsonld_for(r):
         },
         "url": f'{BASE_URL}/recipes/{r["slug"]}.html',
     }
+    if r.get("image"):
+        data["image"] = f'{BASE_URL}/{r["image"]}'
     return json.dumps(data, ensure_ascii=False, indent=2)
 
 
@@ -176,6 +193,8 @@ def build_recipe_pages():
     for r in recipes:
         notes = (f'<section><h2>Notes</h2><p>{esc(r["notes"])}</p></section>'
                  if r.get("notes") else "")
+        image_block = (f'<img class="hero-photo" src="../{r["image"]}" '
+                       f'alt="{esc(r["title"])}">' if r.get("image") else "")
         rel = [by_slug[s] for s in r.get("related", []) if s in by_slug]
         related = ""
         if rel:
@@ -193,7 +212,7 @@ def build_recipe_pages():
             cal_total=r["kcal_total"], prot_total=r["protein_total"],
             ingredients="".join(f"<li>{esc(i)}</li>" for i in r["ingredients"]),
             steps="".join(f"<li>{esc(s)}</li>" for s in r["steps"]),
-            notes=notes, related=related,
+            notes=notes, related=related, image_block=image_block,
             jsonld=jsonld_for(r),
         )
         (out / f'{r["slug"]}.html').write_text(page)
