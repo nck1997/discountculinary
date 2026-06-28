@@ -43,6 +43,10 @@ def build_index():
 
     # 2) rebrand the visible strings (Water St. kept deliberately as homage)
     swaps = {
+        '<div class="brand">':
+            '<div class="brand"><img src="assets/crest.svg" '
+            'alt="Discount Culinary Institute crest" '
+            'style="display:block;width:100%;max-width:220px;margin:2px auto 12px">',
         "<title>Water St Cookbook</title>":
             f"<title>{SITE_NAME} — high-protein recipes that don't taste healthy</title>",
         '<h1>Water St Cookbook</h1>': f'<h1>{SITE_NAME}</h1>',
@@ -58,7 +62,10 @@ def build_index():
             ('<p>Comfort food that’s secretly loaded with protein. Search by dish, '
              'ingredient, or tag, and filter by protein and calories. Every recipe was created '
              'and dialed in at the Water St. campus — the apartment where the self-taught '
-             '“degree” happened. No culinary school. No accreditation. Great food.</p>'),
+             '“degree” happened. No culinary school. No accreditation. Great food.</p>'
+             '<p style="margin:10px 0 0;font-style:italic;color:#7a5b44">Haud Sanum Sapit '
+             '— “it doesn’t taste healthy.” · Est. Water St. Campus · No accreditation, '
+             'no debt, great food.</p>'),
         ('Water St Cookbook — living HTML recipe library — designed for repeat cooking, '
          'not blog SEO sludge'):
             (f'{SITE_NAME} — born at the Water St. campus — high-protein home cooking, '

@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 680 512" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Discount Culinary Institute crest</title>
+<desc>A satirical university coat of arms: a mortarboard above a shield holding a chef's toque and a dumbbell, with the mock-Latin motto Haud Sanum Sapit.</desc>
+<rect x="120" y="24" width="440" height="470" rx="16" fill="#fbf3e8" stroke="#6b4a33" stroke-width="2"/>
+<rect x="132" y="36" width="416" height="446" rx="10" fill="none" stroke="#6b4a33" stroke-width="1" opacity="0.5"/>
+<text x="340" y="76" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="19" font-weight="600" letter-spacing="2.5" fill="#5a3f2c">DISCOUNT CULINARY INSTITUTE</text>
+<line x1="216" y1="90" x2="464" y2="90" stroke="#6b4a33" stroke-width="1" opacity="0.5"/>
+<path d="M316,150 L364,150 L358,168 Q340,178 322,168 Z" fill="#3a2e26" stroke="#6b4a33" stroke-width="1.5"/>
+<polygon points="340,108 398,130 340,152 282,130" fill="#3a2e26" stroke="#6b4a33" stroke-width="1.5"/>
+<circle cx="340" cy="130" r="4" fill="#e3b34a"/>
+<path d="M340,130 L398,130 L398,168" fill="none" stroke="#e3b34a" stroke-width="2"/>
+<circle cx="398" cy="172" r="5" fill="#e3b34a"/>
+<path d="M278,176 L402,176 L402,300 Q402,358 340,404 Q278,358 278,300 Z" fill="#f4ead9"/>
+<path d="M278,300 L402,300 Q402,358 340,404 Q278,358 278,300 Z" fill="#0fb5b5"/>
+<line x1="278" y1="300" x2="402" y2="300" stroke="#6b4a33" stroke-width="1.5" opacity="0.6"/>
+<path d="M278,176 L402,176 L402,300 Q402,358 340,404 Q278,358 278,300 Z" fill="none" stroke="#6b4a33" stroke-width="3"/>
+<ellipse cx="314" cy="223" rx="20" ry="18" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<ellipse cx="366" cy="223" rx="20" ry="18" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<ellipse cx="340" cy="212" rx="24" ry="22" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<rect x="311" y="240" width="58" height="22" rx="3" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<line x1="326" y1="243" x2="326" y2="259" stroke="#6b4a33" stroke-width="1" opacity="0.6"/>
+<line x1="340" y1="243" x2="340" y2="259" stroke="#6b4a33" stroke-width="1" opacity="0.6"/>
+<line x1="354" y1="243" x2="354" y2="259" stroke="#6b4a33" stroke-width="1" opacity="0.6"/>
+<rect x="320" y="336" width="40" height="8" rx="4" fill="#fffdf9" stroke="#6b4a33" stroke-width="1.5"/>
+<rect x="303" y="325" width="14" height="30" rx="3" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<rect x="363" y="325" width="14" height="30" rx="3" fill="#fffdf9" stroke="#6b4a33" stroke-width="2"/>
+<polygon points="258,406 234,416 258,426" fill="#c9933a" stroke="#6b4a33" stroke-width="1.5"/>
+<polygon points="422,406 446,416 422,426" fill="#c9933a" stroke="#6b4a33" stroke-width="1.5"/>
+<rect x="258" y="403" width="164" height="30" rx="2" fill="#e3b34a" stroke="#6b4a33" stroke-width="2"/>
+<text x="340" y="423" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" font-weight="600" font-style="italic" letter-spacing="1.5" fill="#4a3320">Haud Sanum Sapit</text>
+<text x="340" y="458" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" letter-spacing="1.5" fill="#6b4a33">Est. &#183; Water St. Campus</text>
+<text x="340" y="478" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11" letter-spacing="0.5" fill="#8a6f57">No accreditation &#183; No debt &#183; Great food</text>
+</svg>
