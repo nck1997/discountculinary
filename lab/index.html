@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macro Lab — Discount Culinary Institute</title>
+<meta name="description" content="Set calorie, protein and fiber targets and see which recipes, staples and fast-food orders fit.">
+<link rel="canonical" href="https://nck1997.github.io/discountculinary/lab/">
+<meta property="og:title" content="Macro Lab — Discount Culinary Institute">
+<meta property="og:description" content="Set calorie, protein and fiber targets and see which recipes, staples and fast-food orders fit.">
+<meta property="og:url" content="https://nck1997.github.io/discountculinary/lab/">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Libre+Franklin:wght@400;600;700&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <a class="brand" href="../index.html">
+    <img src="../assets/mark.svg" alt="" width="56" height="56">
+    <span class="brand-name">Discount Culinary Institute<span class="brand-sub">Water St. campus</span></span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="../index.html">Recipes</a>
+    <a href="../lab/index.html" aria-current="page">Macro Lab</a>
+  </nav>
+</header>
+<main class="lab">
+<div class="page-title"><div class="tape-wrap flat"><h1 class="tape">Macro Lab</h1></div></div>
+<div class="lab-intro">
+  <div>
+    <p class="summary">Set calories, protein and fiber. See what fits: these recipes, a few pantry staples, and fast food for the days it comes to that.</p>
+    <p class="section-note">Pin anything you already know you're eating and the lab fills in the rest.</p>
+  </div>
+  <div class="note green">
+    <span class="note-title">On file</span>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+</div>
+
+<section aria-labelledby="targets-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Targets</p><h2 id="targets-h">Dial in the day</h2></div>
+    <p class="section-note">Slide, or type an exact number.</p>
+  </div>
+  <div class="slider-grid" id="sliderGrid"></div>
+  <div class="filter-row">
+    <div>
+      <div class="filter-label">Sources</div>
+      <div class="chip-group" id="sourceChips"></div>
+    </div>
+    <div>
+      <div class="filter-label">Availability</div>
+      <div class="chip-group" id="availabilityChips"></div>
+    </div>
+    <label class="search-box">
+      <span>Search items</span>
+      <input class="text-input" id="searchInput" type="search" placeholder="Chicken bowl, wings, yogurt">
+    </label>
+  </div>
+</section>
+
+<section id="selectionSection" aria-labelledby="pinned-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Pinned picks</p><h2 id="pinned-h">Lock in what you want</h2></div>
+    <p class="section-note">Pin an item, set the count, and roll again to fill the rest.</p>
+  </div>
+  <div id="selectionSummary"></div>
+  <div class="selection-grid" id="pinnedGrid"></div>
+</section>
+
+<div class="compact-pinned-bar" id="compactPinnedBar" aria-live="polite"></div>
+
+<section id="comboResults" aria-labelledby="combo-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Best combos</p><h2 id="combo-h">Meals that hit the numbers</h2></div>
+    <p class="section-note" id="comboSummary"></p>
+  </div>
+  <div class="combo-grid" id="comboGrid"></div>
+</section>
+
+<section id="itemResults" aria-labelledby="items-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Food library</p><h2 id="items-h">Single items in range</h2></div>
+    <p class="section-note">Pin from here when you already know one piece of the meal.</p>
+  </div>
+  <div class="library-grid" id="itemGrid"></div>
+</section>
+
+<section id="cuisineResults" aria-labelledby="cuisine-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">By cuisine</p><h2 id="cuisine-h">Browse by food lane</h2></div>
+    <p class="section-note">The same active sources, grouped.</p>
+  </div>
+  <div class="cuisine-grid" id="cuisineGrid"></div>
+</section>
+
+<section id="dealResults" aria-labelledby="deals-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Official deals</p><h2 id="deals-h">Taco Bell boxes and combos</h2></div>
+    <p class="section-note" id="dealSummary"></p>
+  </div>
+  <div class="deal-grid" id="dealGrid"></div>
+</section>
+
+<p class="section-note">Taco Bell nutrition comes from official Taco Bell menu pages and linked Nutritionix labels. Fast-casual numbers use official nutrition guides and common builds. Recipe and staple macros are my own. Recipes don't track fiber yet, so they count as 0g.</p>
+</main>
+
+<div class="recipe-modal hidden" id="recipeModal" role="dialog" aria-modal="true" aria-labelledby="recipeModalTitle">
+  <div class="recipe-modal-backdrop" data-close-recipe="true"></div>
+  <article class="recipe-panel">
+    <button class="btn small recipe-close" type="button" data-close-recipe="true">Close</button>
+    <div id="recipeModalContent"></div>
+  </article>
+</div>
+
+<footer class="footer">
+  <p>Discount Culinary Institute · created at the Water St. campus · no accreditation, no debt, great food.</p>
+  <p>Calories and protein are home-kitchen estimates, per serving unless it says otherwise.</p>
+  <p><a href="../index.html">All recipes</a> · <a href="../lab/index.html">Macro Lab</a></p>
+</footer>
+</div>
+<script src="../data/taco-bell-items.js"></script>
+<script src="../data/fast-casual-items.js"></script>
+<script src="../data/personal-recipes.js"></script>
+<script src="../assets/lab.js"></script>
+</body>
+</html>

@@ -15,13 +15,16 @@ Multiple shots of one dish? Keep your favorite; name extras `saag chicken 2.heic
 ## Recipe → filename to use
 | Recipe | Name the file |
 |---|---|
+| Air Fryer Molten Lava Cakes | `Air Fryer Molten Lava Cakes` |
 | Beef and Broccoli Stir Fry | `Beef and Broccoli Stir Fry` |
 | Birria Chili | `Birria Chili` |
 | Breakfast Tacos | `Breakfast Tacos` |
+| Butter Chicken (WIP) | `Butter Chicken (WIP)` |
 | Calzones | `Calzones` |
 | Chipotle Feta Tuna Peppers | `Chipotle Feta Tuna Peppers` |
 | Creamed Spinach Saag Pasta | `Creamed Spinach Saag Pasta` |
 | Espagueti Verde | `Espagueti Verde` |
+| Fond-Rescue Black Bean Soup | `Fond-Rescue Black Bean Soup` |
 | Garlic-Herb Flatbreads | `Garlic-Herb Flatbreads` |
 | Greek Yogurt Bagels | `Greek Yogurt Bagels` |
 | Guanciale Carbonara with Fresh Fettuccine | `Guanciale Carbonara with Fresh Fettuccine` |
@@ -30,7 +33,9 @@ Multiple shots of one dish? Keep your favorite; name extras `saag chicken 2.heic
 | Homemade Alfredo | `Homemade Alfredo` |
 | Lasagna Soup | `Lasagna Soup` |
 | Lime Sesame Toom Vinaigrette | `Lime Sesame Toom Vinaigrette` |
+| Mexican Chicken Salad Bowl | `Mexican Chicken Salad Bowl` |
 | Mexican Cottage Pie | `Mexican Cottage Pie` |
+| Pan-Fried Turkey Dumplings | `Pan-Fried Turkey Dumplings` |
 | Potato Wedge Taco Bowl | `Potato Wedge Taco Bowl` |
 | Queso Fundido | `Queso Fundido` |
 | Red Salsa | `Red Salsa` |
@@ -42,4 +47,7 @@ Multiple shots of one dish? Keep your favorite; name extras `saag chicken 2.heic
 | Turkey Breakfast Sausages | `Turkey Breakfast Sausages` |
 | Turkey Ragu | `Turkey Ragu` |
 | White Bean Ragù Soup | `White Bean Ragù Soup` |
+| Wisconsin-Style Onion Smash Sliders | `Wisconsin-Style Onion Smash Sliders` |
 | Zucchini Bread | `Zucchini Bread` |
+
+The photos on the site right now are stock shots (see `assets/img/SOURCES.md`). Each one is replaced the moment you add your own with the same recipe name.
