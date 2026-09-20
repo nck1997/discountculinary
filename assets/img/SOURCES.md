@@ -29,13 +29,13 @@ To swap in your own shot, follow `PHOTOS.md` — `add_photos.py` overwrites `ass
 | Skyr Chipotle Crema | `skyr-chipotle-crema.jpg` | https://images.unsplash.com/photo-1668665771757-4d42737d295a |
 | Potato Wedge Taco Bowl | `potato-wedge-taco-bowl.jpg` | https://images.unsplash.com/photo-1565310022184-f23a884f29da |
 | Guanciale Carbonara with Fresh Fettuccine | `guanciale-carbonara.jpg` | https://images.unsplash.com/photo-1627207644206-a2040d60ecad |
-| Beef and Broccoli Stir Fry | `beef-and-broccoli-stir-fry.jpg` | https://images.unsplash.com/photo-1783375175952-705a0600e05c |
+| Beef and Broccoli Stir Fry | `beef-and-broccoli-stir-fry.jpg` | https://images.unsplash.com/photo-1760504526069-ff0f8bf6e4ca |
 | White Bean Ragù Soup | `white-bean-ragu-soup.jpg` | https://images.unsplash.com/photo-1603105037880-880cd4edfb0d |
-| Saag Chicken | `saag-chicken.jpg` | https://images.unsplash.com/photo-1767114915936-745dd372f1d8 |
+| Saag Chicken | `saag-chicken.jpg` | https://images.unsplash.com/photo-1536304575888-ccb70eeef59b |
 | Birria Chili | `birria-chili.jpg` | https://images.unsplash.com/photo-1666819632298-fe15dc7d4c34 |
 | Creamed Spinach Saag Pasta | `creamed-spinach-saag-pasta.jpg` | https://images.unsplash.com/photo-1473093226795-af9932fe5856 |
 | Pan-Fried Turkey Dumplings | `pan-fried-turkey-dumplings.jpg` | https://images.unsplash.com/photo-1769610712810-ec91babfccd3 |
 | Wisconsin-Style Onion Smash Sliders | `onion-smash-sliders.jpg` | https://images.unsplash.com/photo-1687258891382-d1d87399c711 |
 | Fond-Rescue Black Bean Soup | `fond-rescue-black-bean-soup.jpg` | https://images.unsplash.com/photo-1659603606213-cb19636f9f34 |
 | Mexican Chicken Salad Bowl | `mexican-chicken-salad-bowl.jpg` | https://images.unsplash.com/photo-1716392976013-66d90cac4411 |
-| Air Fryer Molten Lava Cakes | `air-fryer-lava-cakes.jpg` | https://images.unsplash.com/photo-1617305855058-336d24456869 |
+| Air Fryer Molten Lava Cakes | `air-fryer-lava-cakes.jpg` | https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e |
