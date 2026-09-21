@@ -16,7 +16,7 @@ To swap in your own shot, follow `PHOTOS.md` — `add_photos.py` overwrites `ass
 | Zucchini Bread | `zucchini-bread.jpg` | https://images.unsplash.com/photo-1611949387839-49a02ef47788 |
 | Calzones | `calzones.jpg` | https://images.unsplash.com/photo-1753656681797-3234c89d6d4d |
 | Spaghetti alla Carbonara | `spaghetti-alla-carbonara.jpg` | https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e |
-| Turkey Breakfast Sausages | `turkey-breakfast-sausages.jpg` | https://images.unsplash.com/photo-1695089026973-c1067361d0e1 |
+| Turkey Breakfast Sausages | `turkey-breakfast-sausages.jpg` | https://images.unsplash.com/photo-1682473610076-8ffe7cf15b84 |
 | Garlic-Herb Flatbreads | `garlic-herb-flatbreads.jpg` | https://images.unsplash.com/photo-1756821752957-00bfcadc3748 |
 | High-Protein Calabrian Chicken Pasta | `high-protein-calabrian-chicken-pasta.jpg` | https://images.unsplash.com/photo-1612152328178-4a6c83d96429 |
 | Queso Fundido | `queso-fundido.jpg` | https://images.unsplash.com/photo-1578554813873-f58c4b4cdd1d |
@@ -38,4 +38,4 @@ To swap in your own shot, follow `PHOTOS.md` — `add_photos.py` overwrites `ass
 | Wisconsin-Style Onion Smash Sliders | `onion-smash-sliders.jpg` | https://images.unsplash.com/photo-1687258891382-d1d87399c711 |
 | Fond-Rescue Black Bean Soup | `fond-rescue-black-bean-soup.jpg` | https://images.unsplash.com/photo-1659603606213-cb19636f9f34 |
 | Mexican Chicken Salad Bowl | `mexican-chicken-salad-bowl.jpg` | https://images.unsplash.com/photo-1716392976013-66d90cac4411 |
-| Air Fryer Molten Lava Cakes | `air-fryer-lava-cakes.jpg` | https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e |
+| Air Fryer Molten Lava Cakes | `air-fryer-lava-cakes.jpg` | https://images.unsplash.com/photo-1768342068919-1ee67c1053ba |
