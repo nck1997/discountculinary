@@ -156,6 +156,14 @@ h3 {
   line-height: 1.1;
 }
 
+.brand-by {
+  margin-left: var(--s3);
+  font-family: var(--font-text);
+  font-size: var(--t-small);
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
 .brand-sub {
   display: block;
   font-family: var(--font-text);

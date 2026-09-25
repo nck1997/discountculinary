@@ -18,7 +18,7 @@ import json, html, pathlib, datetime
 ROOT = pathlib.Path(__file__).parent
 SITE_NAME = "DICE"
 FULL_NAME = "Domestic Institute of Culinary Education"
-AUTHOR = "Nik"
+AUTHOR = "Nischal Kelwadkar"
 # Pages URL for now; swap to https://discountculinary.com once the domain is transferred.
 BASE_URL = "https://nck1997.github.io/discountculinary"
 TAGLINE = ("High-protein recipes from a self-taught home cook. Calories and protein "
@@ -66,7 +66,7 @@ def page(*, title, desc, url, root, current, body, head_extra="", scripts=""):
 <header class="masthead">
   <a class="brand" href="{root}index.html">
     <img src="{root}assets/mark.svg" alt="" width="56" height="56">
-    <span class="brand-name">{esc(SITE_NAME)}<span class="brand-sub">{esc(FULL_NAME)}</span></span>
+    <span class="brand-name">{esc(SITE_NAME)}<span class="brand-by">By {esc(AUTHOR)}</span><span class="brand-sub">{esc(FULL_NAME)}</span></span>
   </a>
   <nav class="nav" aria-label="Main">
     {nav("index.html", "Recipes", "recipes")}
@@ -75,7 +75,7 @@ def page(*, title, desc, url, root, current, body, head_extra="", scripts=""):
 </header>
 {body}
 <footer class="footer">
-  <p>{esc(SITE_NAME)} · {esc(FULL_NAME)} · recipes by {esc(AUTHOR)}, self-taught.</p>
+  <p>{esc(SITE_NAME)} · {esc(FULL_NAME)} · by {esc(AUTHOR)}.</p>
   <p>Calories and protein are home-kitchen estimates, per serving unless it says otherwise.</p>
   <p><a href="{root}index.html">All recipes</a> · <a href="{root}lab/index.html">Macro Lab</a></p>
 </footer>
