@@ -21,7 +21,7 @@ To swap in your own shot, follow `PHOTOS.md` — `add_photos.py` overwrites `ass
 | High-Protein Calabrian Chicken Pasta | `high-protein-calabrian-chicken-pasta.jpg` | https://images.unsplash.com/photo-1612152328178-4a6c83d96429 |
 | Queso Fundido | `queso-fundido.jpg` | https://images.unsplash.com/photo-1578554813873-f58c4b4cdd1d |
 | Breakfast Tacos | `breakfast-tacos.jpg` | https://images.unsplash.com/photo-1731090389663-7d6603994fd3 |
-| Butter Chicken (WIP) | `butter-chicken-wip.jpg` | https://images.unsplash.com/photo-1742599361539-f096753d1100 |
+| Butter Chicken (WIP) | `butter-chicken.jpg` | https://images.unsplash.com/photo-1742599361539-f096753d1100 |
 | Chipotle Feta Tuna Peppers | `chipotle-feta-tuna-peppers.jpg` | https://images.unsplash.com/photo-1596464716059-f81da526557b |
 | Sushi Bake Tuna Handrolls | `sushi-bake-tuna-handrolls.jpg` | https://images.unsplash.com/photo-1611810175241-8b32d1aa8942 |
 | Mexican Cottage Pie | `mexican-cottage-pie.jpg` | https://images.unsplash.com/photo-1696935257293-9ec4f03074a1 |

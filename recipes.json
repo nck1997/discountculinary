@@ -604,16 +604,15 @@
     "image": "assets/img/breakfast-tacos.jpg"
   },
   {
-    "title": "Butter Chicken (WIP)",
-    "slug": "butter-chicken-wip",
+    "title": "Butter Chicken",
+    "slug": "butter-chicken",
     "tags": [
       "Indian",
       "High Protein",
       "Dinner",
-      "Meal Prep",
-      "Work In Progress"
+      "Meal Prep"
     ],
-    "summary": "Yogurt-marinated chicken in a spiced tomato-cream sauce. Good but not yet dialed in — currently runs too acidic. Next attempt: cashew paste and a pinch of sugar to balance. The marinade is solid; the sauce needs refinement.",
+    "summary": "Yogurt-marinated, charred chicken in a spiced tomato sauce finished with heavy cream, cashew paste and cold butter. A long, slow tomato simmer takes out the acidity.",
     "ingredients": [
       "--- MARINADE ---",
       "1.5 lbs chicken breast, cubed and scored",
@@ -641,9 +640,9 @@
       "1 tsp coriander",
       "1 tsp Kashmiri chili powder",
       "1/2 tsp turmeric",
-      "1/2 cup heavy cream",
-      "Pinch of sugar (next time — helps acidity)",
-      "Cashew paste — 1/4 cup soaked raw cashews blended smooth (next time — key for creaminess)",
+      "3/4 cup heavy cream (not milk)",
+      "Pinch of sugar",
+      "1/4 cup raw cashews, soaked and blended into a smooth paste",
       "1/2 cup cottage cheese, blended smooth",
       "1 scoop Ancient Nutrition bone broth powder",
       "1 tbsp cold butter to finish",
@@ -657,7 +656,7 @@
       "Add garlic, ginger, cook 2 min.",
       "Add tomato paste, cook until darkened, 2 min.",
       "Add dry spices, toast 60 seconds.",
-      "Add crushed tomatoes and pinch of sugar. Simmer 20-25 min until thickened and oil begins to separate.",
+      "Add crushed tomatoes and pinch of sugar. Simmer low and slow for 30-40 min, until thick, darkened, and the oil begins to separate. This is what takes the acidity out.",
       "Blend sauce smooth with immersion blender.",
       "Stir in blended cottage cheese and cashew paste.",
       "Add charred chicken, simmer together 10-15 min.",
@@ -665,15 +664,15 @@
       "Finish with cold butter off heat and kasuri methi.",
       "Adjust salt and serve."
     ],
-    "notes": "WORK IN PROGRESS. Current issue: sauce runs too acidic/tomatoey. Fixes to try next time: (1) cashew paste — soak 1/4 cup raw cashews, blend smooth, add before cream; (2) pinch of sugar during tomato simmer; (3) San Marzano tomatoes instead of regular crushed; (4) longer tomato simmer before blending. The marinade is solid and does not need changes. The char step is non-negotiable. Milk and cream do not fix acidity — they only thin the sauce.",
+    "notes": "Heavy cream, not milk: milk thins the sauce without making it rich. It costs some macros, but it's the difference. The long, slow tomato simmer before blending takes out the acidity, with the pinch of sugar and cashew paste rounding it off. The char on the chicken is non-negotiable. For better macros, use 0% skyr + 1 tbsp heavy cream in the marinade.",
     "related": [
       "sushi-bake-tuna-handrolls",
       "chipotle-feta-tuna-peppers"
     ],
-    "kcal_total": 1725,
-    "protein_total": 186,
+    "kcal_total": 2120,
+    "protein_total": 193,
     "servings": 3,
-    "image": "assets/img/butter-chicken-wip.jpg"
+    "image": "assets/img/butter-chicken.jpg"
   },
   {
     "title": "Chipotle Feta Tuna Peppers",
@@ -1137,7 +1136,7 @@
     ],
     "notes": "The cottage cheese blended directly into the wilted spinach is the move — it adds body and a big protein boost without the calories of a cream-heavy saag. The fond from browning the chicken is where a lot of the flavor lives, so build the onion base right in it. Full pot runs roughly ~805-850 cal / ~125-135g protein (sauce + chicken, before rice/naan). Makes 3 servings and holds well for 2-3 days. A scoop of bone broth powder pushes the protein even higher. Don't skip the kasuri methi finish — it's what makes it taste authentically saag.",
     "related": [
-      "butter-chicken-wip"
+      "butter-chicken"
     ],
     "kcal_total": 825,
     "protein_total": 130,
