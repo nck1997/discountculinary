@@ -116,12 +116,9 @@ def build_index():
     body = f"""<main>
 <section class="intro">
   <div class="note">
-    <p class="note-big">{esc(SITE_NAME)}</p>
-    <p>{esc(FULL_NAME)}</p>
+    <p class="note-big">Recipes and macros :)</p>
   </div>
   <div class="intro-copy">
-    <p>High-protein recipes from a self-taught home cook. I learned in my apartment kitchen on Water St., with no formal training, and these are the dishes I make on repeat.</p>
-    <p class="fine">{len(recipes)} recipes, each with calories and protein per serving. Trying to hit a number today? The Macro Lab builds a meal around your targets.</p>
     <p><a class="btn small" href="lab/index.html">Open the Macro Lab</a></p>
   </div>
 </section>
