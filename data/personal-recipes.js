@@ -75,21 +75,22 @@ window.PERSONAL_RECIPES = [
     "image": "assets/img/high-protein-pizza-dough.jpg"
   },
   {
-    "title": "Turkey Ragu",
+    "title": "Spicy Turkey Ragu",
     "slug": "turkey-ragu",
     "tags": [
       "Italian",
+      "Sauce",
       "High Protein",
       "Dinner",
       "Meal Prep"
     ],
-    "summary": "Long-simmered spicy turkey ragu with onions, garlic, tomato paste, crushed tomatoes, herbs, and parmesan rind.",
+    "summary": "Long-simmered spicy turkey ragu with onions, garlic, tomato paste, crushed tomatoes, herbs, and parmesan rind. The rule is one can of crushed tomatoes per pound of meat, so it scales from a 1 lb weeknight batch to a 2 lb meal-prep pot.",
     "ingredients": [
-      "2 lb 93/7 ground turkey",
+      "2 lb ground meat: 93/7 ground turkey, or 1 lb turkey + 1 lb ground beef",
+      "2 large (28 oz) cans crushed tomatoes (1 can per lb of meat)",
       "1 large onion, diced",
       "5 to 6 cloves garlic, minced",
       "2 to 3 tbsp tomato paste",
-      "1 large can crushed tomatoes",
       "Olive oil",
       "Oregano, basil, parsley",
       "Red chili flakes",
@@ -98,21 +99,22 @@ window.PERSONAL_RECIPES = [
       "Salt and black pepper"
     ],
     "steps": [
-      "Brown turkey and season lightly, then remove.",
+      "Brown the meat and season lightly, then remove.",
       "Cook onion in olive oil until softened and lightly golden.",
       "Add garlic and tomato paste; cook until darkened slightly.",
       "Add crushed tomatoes, herbs, chili flakes, paprika, and parmesan rind.",
-      "Return turkey to the pot and simmer low for at least 45 to 90 minutes.",
+      "Return the meat to the pot and simmer low for at least 45 to 90 minutes.",
       "Adjust seasoning and reduce until rich and concentrated."
     ],
-    "notes": "Base recipe that can feed pasta, lasagna soup, baked pasta, or calzones. One of the core Water St utility sauces.",
+    "notes": "Scaling rule: one can of crushed tomatoes per pound of meat. Three ways to make it: 2 lb turkey (the default, numbers shown here), 1 lb turkey + 1 lb beef (heavier and beefier, about 2,400 kcal / 200g protein per pot), or 1 lb turkey with everything halved (about 1,150 kcal / 105g protein, 3 servings). Base recipe for pasta, lasagna soup, white bean ragu soup, baked pasta, or calzones. One of the core Water St utility sauces.",
     "related": [
       "lasagna-soup",
+      "white-bean-ragu-soup",
       "calzones",
       "spicy-marinara-pizza-sauce",
       "high-protein-calabrian-chicken-pasta"
     ],
-    "kcal_total": 1900,
+    "kcal_total": 2300,
     "protein_total": 210,
     "servings": 6,
     "image": "assets/img/turkey-ragu.jpg"
