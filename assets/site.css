@@ -447,9 +447,9 @@ input[type="range"] {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
-  gap: var(--s6);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s5);
+  align-items: start;
   padding: var(--s6) 0 var(--s5);
 }
 
@@ -461,6 +461,16 @@ input[type="range"] {
 
 .intro-copy p {
   margin: 0 0 var(--s3);
+}
+
+.intro > .note {
+  max-width: 300px;
+}
+
+.intro-copy .intro-line {
+  font-family: var(--font-marker);
+  font-size: var(--t-h2);
+  line-height: 1.2;
 }
 
 .intro-copy .fine {
