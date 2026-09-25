@@ -116,9 +116,11 @@ def build_index():
     body = f"""<main>
 <section class="intro">
   <div class="note">
-    <p class="note-big">Recipes and macros :)</p>
+    <p class="note-big">{esc(SITE_NAME)}</p>
+    <p>{esc(FULL_NAME)}</p>
   </div>
   <div class="intro-copy">
+    <p>Recipes and macros :)</p>
     <p><a class="btn small" href="lab/index.html">Open the Macro Lab</a></p>
   </div>
 </section>
