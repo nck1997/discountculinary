@@ -1,4 +1,4 @@
-# Discount Culinary Institute — design rules
+# DICE — design rules
 
 The site should feel like a home cook's fridge door and a student's notebook:
 photos held up with blue painter's tape, names written on the tape in marker,

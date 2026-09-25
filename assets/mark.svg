@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="t">
-<title id="t">Discount Culinary Institute</title>
+<title id="t">DICE — Domestic Institute of Culinary Education</title>
 <circle cx="60" cy="60" r="55" fill="#fdfbf6" stroke="#23201b" stroke-width="5"/>
 <circle cx="60" cy="60" r="46" fill="none" stroke="#23201b" stroke-width="1.5" stroke-dasharray="2 4"/>
 <polygon points="60,24 96,38 60,52 24,38" fill="#23201b"/>
 <path d="M42 46v10q18 10 36 0V46l-18 7z" fill="#23201b"/>
 <path d="M96 38v18" stroke="#23201b" stroke-width="3" stroke-linecap="round"/>
 <circle cx="96" cy="59" r="4" fill="#62a9e2" stroke="#23201b" stroke-width="2"/>
-<text x="60" y="96" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="28" letter-spacing="1" fill="#23201b">DCI</text>
+<text x="60" y="96" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="24" letter-spacing="1" fill="#23201b">DICE</text>
 </svg>

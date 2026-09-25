@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Discount Culinary Institute — static site builder.
+DICE (Domestic Institute of Culinary Education) — static site builder.
 
 Single source of truth: recipes.json
 Outputs (all GENERATED — never hand-edit):
@@ -16,13 +16,13 @@ Run:  python3 build.py
 import json, html, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).parent
-SITE_NAME = "Discount Culinary Institute"
-SLOGAN = "This doesn't taste healthy."
+SITE_NAME = "DICE"
+FULL_NAME = "Domestic Institute of Culinary Education"
 AUTHOR = "Nik"
 # Pages URL for now; swap to https://discountculinary.com once the domain is transferred.
 BASE_URL = "https://nck1997.github.io/discountculinary"
-TAGLINE = ("High-protein recipes that taste like real food. Self-taught at the "
-           "Water St. campus — no culinary school, no accreditation, great food.")
+TAGLINE = ("High-protein recipes from a self-taught home cook. Calories and protein "
+           "per serving on every recipe.")
 FONTS = ("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700"
          "&family=Libre+Franklin:wght@400;600;700&family=Permanent+Marker&display=swap")
 
@@ -66,7 +66,7 @@ def page(*, title, desc, url, root, current, body, head_extra="", scripts=""):
 <header class="masthead">
   <a class="brand" href="{root}index.html">
     <img src="{root}assets/mark.svg" alt="" width="56" height="56">
-    <span class="brand-name">{esc(SITE_NAME)}<span class="brand-sub">Water St. campus</span></span>
+    <span class="brand-name">{esc(SITE_NAME)}<span class="brand-sub">{esc(FULL_NAME)}</span></span>
   </a>
   <nav class="nav" aria-label="Main">
     {nav("index.html", "Recipes", "recipes")}
@@ -75,7 +75,7 @@ def page(*, title, desc, url, root, current, body, head_extra="", scripts=""):
 </header>
 {body}
 <footer class="footer">
-  <p>{esc(SITE_NAME)} · created at the Water St. campus · no accreditation, no debt, great food.</p>
+  <p>{esc(SITE_NAME)} · {esc(FULL_NAME)} · recipes by {esc(AUTHOR)}, self-taught.</p>
   <p>Calories and protein are home-kitchen estimates, per serving unless it says otherwise.</p>
   <p><a href="{root}index.html">All recipes</a> · <a href="{root}lab/index.html">Macro Lab</a></p>
 </footer>
@@ -116,12 +116,12 @@ def build_index():
     body = f"""<main>
 <section class="intro">
   <div class="note">
-    <p class="note-big">{esc(SLOGAN)}</p>
-    <p>— the whole curriculum</p>
+    <p class="note-big">{esc(SITE_NAME)}</p>
+    <p>{esc(FULL_NAME)}</p>
   </div>
   <div class="intro-copy">
-    <p>High-protein home cooking from the Water St. campus: the apartment where I taught myself to cook. No culinary school. No accreditation.</p>
-    <p class="fine">{len(recipes)} recipes I make on repeat, each with calories and protein per serving. Trying to hit a number today? The Macro Lab builds a meal around your targets.</p>
+    <p>High-protein recipes from a self-taught home cook. I learned in my apartment kitchen on Water St., with no formal training, and these are the dishes I make on repeat.</p>
+    <p class="fine">{len(recipes)} recipes, each with calories and protein per serving. Trying to hit a number today? The Macro Lab builds a meal around your targets.</p>
     <p><a class="btn small" href="lab/index.html">Open the Macro Lab</a></p>
   </div>
 </section>
@@ -169,7 +169,7 @@ def build_index():
 </div>
 </main>
 """
-    out = page(title=f"{SITE_NAME} — high-protein recipes that don't taste healthy",
+    out = page(title=f"{SITE_NAME} — {FULL_NAME} · high-protein recipes",
                desc=TAGLINE, url=f"{BASE_URL}/", root="", current="recipes", body=body,
                head_extra='<meta property="og:type" content="website">\n',
                scripts='<script src="assets/home.js"></script>\n')
@@ -185,7 +185,7 @@ def jsonld_for(r):
         "name": r["title"],
         "description": r["summary"],
         "author": {"@type": "Person", "name": AUTHOR},
-        "publisher": {"@type": "Organization", "name": SITE_NAME},
+        "publisher": {"@type": "Organization", "name": f"{SITE_NAME} ({FULL_NAME})"},
         "recipeCategory": r["tags"][0] if r.get("tags") else "Main",
         "keywords": ", ".join(r.get("tags", [])),
         "recipeYield": f'{r["servings"]} servings',
@@ -410,7 +410,7 @@ def build_sitemap():
 
 
 if __name__ == "__main__":
-    print("Building Discount Culinary Institute…")
+    print("Building DICE…")
     build_index()
     build_recipe_pages()
     build_lab()

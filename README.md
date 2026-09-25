@@ -1,6 +1,6 @@
-# Discount Culinary Institute
+# DICE — Domestic Institute of Culinary Education
 
-High-protein recipes that taste like real food. *"This doesn't taste healthy."*
+High-protein recipes from a self-taught home cook.
 
 Self-taught at the **Water St. campus** — the apartment where the recipes were created and
 dialed in. No culinary school, no accreditation, great food.
