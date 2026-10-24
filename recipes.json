@@ -1182,6 +1182,7 @@
     ],
     "notes": "The birria beef is a head start, not a complication - it is the chili flavor family already. Two adjustments because of it: season lighter on top (the beef carries chile/cumin/oregano), and mind the acid (Rosa San Marzano crushed plus a pinch of sugar). Goes Cincinnati-style over Brami protein spaghetti with cheddar and raw onion - that is the chili pasta. Or as tacos/bowl with Mission fiber tortillas. Macros are approximate, estimated from logged portions (a 418g plain bowl ran ~533 cal / ~51g protein / ~8g fiber).",
     "related": [
+      "quesabirria-tacos",
       "turkey-ragu",
       "potato-wedge-taco-bowl",
       "mexican-cottage-pie"
@@ -1448,5 +1449,87 @@
     "fat_total": 152,
     "servings": 4,
     "image": "assets/img/air-fryer-lava-cakes.jpg"
+  },
+  {
+    "title": "Quesabirria Tacos with Consommé",
+    "slug": "quesabirria-tacos",
+    "tags": [
+      "Mexican",
+      "Beef",
+      "High Protein",
+      "Dinner",
+      "Meal Prep",
+      "Comfort Food"
+    ],
+    "summary": "Six pounds of chuck seared hard, braised low in the oven for 4 hours with birria seasoning, then shredded. The meat goes into fat-dipped, pan-crisped corn tortillas with Oaxaca cheese, and the braising liquid becomes the consommé for dunking.",
+    "ingredients": [
+      "6 lb beef chuck, cut into ~2-inch cubes",
+      "Neutral oil for searing",
+      "4 cups beef bone broth, divided (2 + 2)",
+      "4 cups water",
+      "1/2 white onion, chopped",
+      "1 head garlic, cloves crushed",
+      "Birria seasoning bombs (enough for ~6 lb of meat, per the package)",
+      "2 bay leaves",
+      "Salt to taste",
+      "To serve: corn tortillas, Oaxaca cheese, finely chopped white onion, cilantro, lime"
+    ],
+    "steps": [
+      "Pat the chuck dry and season with salt. Sear the cubes in batches in a Dutch oven until well browned on a couple of sides. Don't crowd the pot; you want color on the meat and fond on the bottom.",
+      "Pull the meat. Pour in 2 cups of bone broth and scrape up all the fond.",
+      "Add the onion, garlic, birria seasoning bombs and bay leaves, then return the meat. Add the other 2 cups of broth and 4 cups of water.",
+      "Bring to a simmer on the stove for a few minutes, cover, and move to a 300-325°F oven for about 4 hours, until the beef falls apart.",
+      "Lift the meat into a bowl and shred it with two forks. Fish out the bay leaves. The liquid left in the pot is the consommé; taste and salt it.",
+      "For each taco: dip a corn tortilla in the red fat floating on top of the consommé and lay it in a hot nonstick pan. Add Oaxaca cheese and a layer of meat, fold, and crisp both sides until the shell is deep orange and the cheese melts.",
+      "Top with onion and cilantro, squeeze lime over, and serve with a cup of consommé for dipping."
+    ],
+    "notes": "Chill the leftover consommé and the fat sets on top. Skim it into its own container and use a spoonful to fry tortillas or naan later (see the naan wrap). Six pounds of chuck makes far more meat than one person eats in a week; it freezes well in deli containers. Macros are per serving of 4 tacos (~5 oz shredded beef, ~2 oz Oaxaca, a cup of consommé) and are estimates: cooked chuck yields roughly 65% of raw weight, and fat skimmed off the consommé isn't counted. Batch makes about 12 servings.",
+    "related": [
+      "birria-naan-wrap",
+      "birria-chili",
+      "red-salsa"
+    ],
+    "kcal_total": 10100,
+    "protein_total": 710,
+    "servings": 12,
+    "image": "assets/img/quesabirria-tacos.jpg"
+  },
+  {
+    "title": "Birria Naan Wrap",
+    "slug": "birria-naan-wrap",
+    "tags": [
+      "Mexican",
+      "Beef",
+      "High Protein",
+      "Quick",
+      "Comfort Food"
+    ],
+    "summary": "Leftover birria folded into an H-E-B naan that's been fried in skimmed birria fat, with Oaxaca cheese, onion, cilantro, lime and two creamy salsas. Gyro shape, taco everything else.",
+    "ingredients": [
+      "1 H-E-B naan",
+      "~1 tsp birria fat (skimmed from chilled consommé)",
+      "~7 oz leftover shredded birria beef",
+      "~1 oz Oaxaca cheese",
+      "Finely chopped white onion",
+      "Cilantro",
+      "Lime wedge",
+      "Creamy red salsa and creamy green salsa (2 restaurant packets, ~1 oz each)"
+    ],
+    "steps": [
+      "Melt the birria fat in a nonstick pan over medium heat and cook the naan until it picks up color and the red fat on both sides.",
+      "In a second pan, reheat the shredded birria until the edges crisp a little. Lay the Oaxaca cheese on top and let it melt.",
+      "Move the naan to a plate. Pile the meat and cheese down the middle, then top with onion, cilantro and a squeeze of lime.",
+      "Drizzle both salsas over the top, fold it like a gyro, and wrap the bottom in foil or parchment to hold it together."
+    ],
+    "notes": "This is the best use of the leftover meat and the skimmed fat. The creamy salsas came from Nuevo León (the restaurant); they're oil-emulsified, so count roughly 60 cal per packet. A Mission fiber tortilla instead of naan cuts about 280 cal but you lose the chew. Macros are estimates: naan ~320, fat ~40, beef ~470, cheese ~80, salsas ~120, toppings ~15.",
+    "related": [
+      "quesabirria-tacos",
+      "birria-chili",
+      "garlic-herb-flatbreads"
+    ],
+    "kcal_total": 1045,
+    "protein_total": 70,
+    "servings": 1,
+    "image": "assets/img/birria-naan-wrap.jpg"
   }
 ]
