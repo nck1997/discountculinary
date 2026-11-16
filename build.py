@@ -15,7 +15,7 @@ Outputs (all GENERATED — never hand-edit):
 Look and feel: assets/site.css, rules in DESIGN.md.
 Run:  python3 build.py
 """
-import json, html, pathlib, datetime
+import json, html, pathlib, datetime, hashlib
 
 ROOT = pathlib.Path(__file__).parent
 SITE_NAME = "DICE"
@@ -34,6 +34,12 @@ by_slug = {r["slug"]: r for r in recipes}
 
 def esc(s):
     return html.escape(str(s), quote=True)
+
+
+def asset(rel):
+    """Path plus a content hash, so browsers fetch a file again whenever it changes."""
+    digest = hashlib.sha1((ROOT / rel).read_bytes()).hexdigest()[:8]
+    return f"{rel}?v={digest}"
 
 
 def per(r, key):
@@ -61,7 +67,7 @@ def page(*, title, desc, url, root, current, body, head_extra="", scripts=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{root}assets/site.css">
+<link rel="stylesheet" href="{root}{asset('assets/site.css')}">
 {head_extra}</head>
 <body>
 <div class="wrap">
@@ -174,7 +180,7 @@ def build_index():
     out = page(title=f"{SITE_NAME} — {FULL_NAME} · high-protein recipes",
                desc=TAGLINE, url=f"{BASE_URL}/", root="", current="recipes", body=body,
                head_extra='<meta property="og:type" content="website">\n',
-               scripts='<script src="assets/home.js"></script>\n')
+               scripts=f'<script src="{asset("assets/home.js")}"></script>\n')
     (ROOT / "index.html").write_text(out)
     print(f"  index.html  ({len(recipes)} recipes)")
 
@@ -383,10 +389,9 @@ def build_lab():
   </article>
 </div>
 """
-    scripts = ('<script src="../data/taco-bell-items.js"></script>\n'
-               '<script src="../data/fast-casual-items.js"></script>\n'
-               '<script src="../data/personal-recipes.js"></script>\n'
-               '<script src="../assets/lab.js"></script>\n')
+    scripts = "".join(f'<script src="../{asset(f)}"></script>\n' for f in (
+        "data/taco-bell-items.js", "data/fast-casual-items.js",
+        "data/personal-recipes.js", "assets/lab.js"))
     (ROOT / "lab").mkdir(exist_ok=True)
     (ROOT / "lab" / "index.html").write_text(page(
         title=f"Macro Lab — {SITE_NAME}",
@@ -509,9 +514,8 @@ def build_roll():
 </section>
 </main>
 """
-    scripts = ('<script src="../data/pantry.js"></script>\n'
-               '<script src="../data/personal-recipes.js"></script>\n'
-               '<script src="../assets/roll.js"></script>\n')
+    scripts = "".join(f'<script src="../{asset(f)}"></script>\n' for f in (
+        "data/pantry.js", "data/personal-recipes.js", "assets/roll.js"))
     (ROOT / "roll").mkdir(exist_ok=True)
     (ROOT / "roll" / "index.html").write_text(page(
         title=f"Roll the DICE — {SITE_NAME}",

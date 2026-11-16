@@ -1527,11 +1527,13 @@ body.modal-open {
   box-shadow: 0 2px 2px var(--shadow-soft), 0 22px 16px -12px var(--shadow);
 }
 
-.die.rolling .die-name {
+.die.rolling .die-name,
+.die.rolling-still .die-name {
   color: var(--ink-soft);
 }
 
-.die.rolling .die-hold {
+.die.rolling .die-hold,
+.die.rolling-still .die-hold {
   visibility: hidden;
 }
 

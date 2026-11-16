@@ -211,10 +211,11 @@
     tumble(held, newBan, newTech);
   }
 
-  /* Tumble every die that changed: names flicker past, then each die lands in turn. */
+  /* Tumble every die that changed: names flicker past, then each die lands in turn.
+     With reduced motion on, the names still cycle but the dice stay put. */
   function tumble(held, newBan, newTech) {
     var reduce = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+    var spin = reduce ? "rolling-still" : "rolling";
     var jobs = [];
     Array.prototype.forEach.call(document.querySelectorAll("#diceGrid .die"), function (el, i) {
       if (held[i]) return;
@@ -233,17 +234,19 @@
     $("rollArea").classList.add("is-rolling");
     jobs.forEach(function (job, n) {
       var nameEl = job.el.querySelector(".die-name"), finalName = nameEl.textContent;
-      job.el.classList.add("rolling");
+      job.el.classList.add(spin);
       job.el.style.animationDelay = (n * 40) + "ms";
       var timer = setInterval(function () {
         nameEl.textContent = job.names[Math.floor(Math.random() * job.names.length)];
-      }, 80);
+      }, reduce ? 150 : 80);
       setTimeout(function () {
         clearInterval(timer);
         nameEl.textContent = finalName;
-        job.el.classList.remove("rolling");
-        job.el.classList.add("landed");
-        setTimeout(function () { job.el.classList.remove("landed"); }, 320);
+        job.el.classList.remove(spin);
+        if (!reduce) {
+          job.el.classList.add("landed");
+          setTimeout(function () { job.el.classList.remove("landed"); }, 320);
+        }
         if (n === jobs.length - 1) {
           state.rolling = false;
           $("rollBtn").disabled = false;
