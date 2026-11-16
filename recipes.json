@@ -1531,5 +1531,53 @@
     "protein_total": 70,
     "servings": 1,
     "image": "assets/img/birria-naan-wrap.jpg"
+  },
+  {
+    "title": "Chipotle Tomato Soup Pasta with Burrata",
+    "slug": "chipotle-tomato-soup-pasta",
+    "tags": [
+      "Italian",
+      "Mexican",
+      "Pasta",
+      "Quick",
+      "Dinner",
+      "Comfort Food"
+    ],
+    "summary": "Fusilli gigante in a smoky, properly spicy sauce made by blending Kirkland tomato basil soup with chipotles in adobo, poured over a whole head of toasted garlic. Costco chipotle chicken, a lot of parmesan, and a scoop of burrata on top. No ragu patience required.",
+    "ingredients": [
+      "~190g dry fusilli gigante (a little over half of a 340g bag)",
+      "~400g Kirkland Signature tomato basil soup (a little under half of the 907g tub)",
+      "2 chipotle peppers in adobo, plus about 1 tbsp of the adobo sauce",
+      "1 whole head garlic, smashed and chopped",
+      "~2 tbsp olive oil",
+      "Splash of starchy pasta water (for the blend, plus more to loosen)",
+      "~6 oz Kirkland Signature Grilled Chipotle Chicken",
+      "~40g freshly grated parmesan",
+      "Burrata, 1 scoop (~40g) per plate",
+      "Dried oregano and dried parsley, to finish",
+      "Finishing salt"
+    ],
+    "steps": [
+      "Boil the pasta in well-salted water. Save a mug of the pasta water before draining.",
+      "Blend the soup, chipotle peppers, adobo sauce and a splash of pasta water with a stick blender until smooth.",
+      "Toast the garlic in the olive oil over medium heat until golden and fragrant.",
+      "Pour the blended sauce over the garlic and simmer for a few minutes so it thickens slightly.",
+      "Add the chicken to warm through, then the drained pasta. Toss until everything is coated.",
+      "Grate in the parmesan while it simmers and stir until it melts into the sauce. Loosen with more pasta water if it tightens up.",
+      "Taste before salting. The soup, pasta water and parmesan carry almost all the salt it needs.",
+      "Plate, add a scoop of burrata, shake over dried oregano and parsley, and hit it with finishing salt."
+    ],
+    "notes": "Two full peppers makes it genuinely spicy; start with one pepper and a spoon of sauce for a milder pan. The soup does the work of a long-simmered sauce, since it already has body, cream and basil in it. Macros are estimates from eyeballed amounts: pasta ~675, soup ~350, chicken ~300, burrata ~300 (3 scoops), olive oil ~240, parmesan ~160, garlic and chipotles ~85. Whole pan is roughly 108g fat and 180g carbs. More chicken is the easy way to push the protein up.",
+    "related": [
+      "high-protein-calabrian-chicken-pasta",
+      "skyr-chipotle-crema",
+      "spicy-marinara-pizza-sauce"
+    ],
+    "kcal_total": 2110,
+    "protein_total": 97,
+    "carbs_total": 180,
+    "fat_total": 108,
+    "servings": 3,
+    "image": "assets/img/chipotle-tomato-soup-pasta.jpg"
   }
 ]
