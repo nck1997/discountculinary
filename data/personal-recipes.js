@@ -1170,7 +1170,18 @@ window.PERSONAL_RECIPES = [
       "Pinch of sugar (balances the birria vinegar + tomato acidity)",
       "Salt to taste",
       "Optional: 1 can pinto or black beans",
-      "To finish: lime, raw diced onion, cilantro"
+      "To finish: lime, raw diced onion, cilantro",
+      "--- VARIATION: REAL BIRRIA + GROUND BEEF (Nov 2026) ---",
+      "Avocado oil",
+      "1 white onion, diced",
+      "Tomato paste",
+      "1 lb 93/7 ground beef",
+      "~14 oz leftover homemade birria (thawed from frozen), shredded",
+      "1 can (14 oz) diced tomatoes",
+      "1 can cannellini beans, drained",
+      "Beef bone broth",
+      "1 packet H-E-B Texas chili seasoning",
+      "To serve as chili sandwiches: H-E-B mini cheddar hoagie rolls or Martin's big sesame rolls, diced pickled hatch nacho jalapeños, hot sauce"
     ],
     "steps": [
       "Warm olive oil in a pot and cook the onion until soft and lightly golden. Add garlic and cook 1 min.",
@@ -1179,9 +1190,11 @@ window.PERSONAL_RECIPES = [
       "Add crushed tomatoes and a splash of bone broth. Season LIGHTLY - taste first, the beef already carries chile, cumin, and oregano - then nudge with smoked paprika or chipotle. Add a pinch of sugar to balance the acid.",
       "Simmer low 30-45 min until rich and slightly thickened. If it tastes sharp, simmer longer or add another pinch of sugar (same fix as the butter chicken).",
       "Stir in beans if using and warm through.",
-      "Finish with lime, raw diced onion, and cilantro."
+      "Finish with lime, raw diced onion, and cilantro.",
+      "Variation: cook the onion in avocado oil, darken the tomato paste, then brown the ground beef. Add the shredded birria, diced tomatoes, cannellini beans, bone broth and the chili seasoning packet, and simmer until thick. No sugar in this one.",
+      "Chili sandwiches: spoon the thick chili onto a toasted roll and top with pickled hatch jalapeños and hot sauce."
     ],
-    "notes": "The birria beef is a head start, not a complication - it is the chili flavor family already. Two adjustments because of it: season lighter on top (the beef carries chile/cumin/oregano), and mind the acid (Rosa San Marzano crushed plus a pinch of sugar). Goes Cincinnati-style over Brami protein spaghetti with cheddar and raw onion - that is the chili pasta. Or as tacos/bowl with Mission fiber tortillas. Macros are approximate, estimated from logged portions (a 418g plain bowl ran ~533 cal / ~51g protein / ~8g fiber).",
+    "notes": "The birria beef is a head start, not a complication - it is the chili flavor family already. Two adjustments because of it: season lighter on top (the beef carries chile/cumin/oregano), and mind the acid (Rosa San Marzano crushed plus a pinch of sugar). Goes Cincinnati-style over Brami protein spaghetti with cheddar and raw onion - that is the chili pasta. Or as tacos/bowl with Mission fiber tortillas. Macros are approximate, estimated from logged portions (a 418g plain bowl ran ~533 cal / ~51g protein / ~8g fiber). Variation notes: the real-birria version was the better of the two, though not by much. It's higher in protein and a bit richer, and the cannellini beans add creaminess, but the birria gets a little lost behind the chili seasoning. Worth making when there's leftover birria in the freezer; not worth making birria for.",
     "related": [
       "quesabirria-tacos",
       "turkey-ragu",
@@ -1317,9 +1330,9 @@ window.PERSONAL_RECIPES = [
     ],
     "notes": "Smash once, early, and don't touch it again until the flip — the crust is the whole point. Slice the onions as thin as you possibly can; a mandoline helps.",
     "related": [
-      "potato-wedge-taco-bowl",
-      "mexican-cottage-pie",
-      "skyr-chipotle-crema"
+      "everyday-mustard-smash-burger",
+      "pepper-jelly-burrata-smash-burgers",
+      "potato-wedge-taco-bowl"
     ],
     "kcal_total": 1700,
     "protein_total": 120,
@@ -1462,7 +1475,7 @@ window.PERSONAL_RECIPES = [
       "Meal Prep",
       "Comfort Food"
     ],
-    "summary": "Six pounds of chuck seared hard, braised low in the oven for 4 hours with birria seasoning, then shredded. The meat goes into fat-dipped, pan-crisped corn tortillas with Oaxaca cheese, and the braising liquid becomes the consommé for dunking.",
+    "summary": "Six pounds of chuck seared hard, braised low in the oven for about 2.5 hours with birria seasoning, then shredded. The meat goes into fat-dipped, pan-crisped corn tortillas with Oaxaca cheese, and the braising liquid becomes the consommé for dunking.",
     "ingredients": [
       "6 lb beef chuck, cut into ~2-inch cubes",
       "Neutral oil for searing",
@@ -1479,12 +1492,12 @@ window.PERSONAL_RECIPES = [
       "Pat the chuck dry and season with salt. Sear the cubes in batches in a Dutch oven until well browned on a couple of sides. Don't crowd the pot; you want color on the meat and fond on the bottom.",
       "Pull the meat. Pour in 2 cups of bone broth and scrape up all the fond.",
       "Add the onion, garlic, birria seasoning bombs and bay leaves, then return the meat. Add the other 2 cups of broth and 4 cups of water.",
-      "Bring to a simmer on the stove for a few minutes, cover, and move to a 300-325°F oven for about 4 hours, until the beef falls apart.",
+      "Bring to a simmer on the stove for a few minutes, cover, and move to a 325°F oven for about 2.5 hours, until the beef falls apart.",
       "Lift the meat into a bowl and shred it with two forks. Fish out the bay leaves. The liquid left in the pot is the consommé; taste and salt it.",
       "For each taco: dip a corn tortilla in the red fat floating on top of the consommé and lay it in a hot nonstick pan. Add Oaxaca cheese and a layer of meat, fold, and crisp both sides until the shell is deep orange and the cheese melts.",
       "Top with onion and cilantro, squeeze lime over, and serve with a cup of consommé for dipping."
     ],
-    "notes": "Chill the leftover consommé and the fat sets on top. Skim it into its own container and use a spoonful to fry tortillas or naan later (see the naan wrap). Six pounds of chuck makes far more meat than one person eats in a week; it freezes well in deli containers. Macros are per serving of 4 tacos (~5 oz shredded beef, ~2 oz Oaxaca, a cup of consommé) and are estimates: cooked chuck yields roughly 65% of raw weight, and fat skimmed off the consommé isn't counted. Batch makes about 12 servings.",
+    "notes": "Chill the leftover consommé and the fat sets on top. Skim it into its own container and use a spoonful to fry tortillas or naan later (see the naan wrap). Six pounds of chuck makes far more meat than one person eats in a week; it freezes well in deli containers. Macros are per serving of 4 tacos (~5 oz shredded beef, ~2 oz Oaxaca, a cup of consommé) and are estimates: cooked chuck yields roughly 65% of raw weight, and fat skimmed off the consommé isn't counted. Batch makes about 12 servings. Salt: the Birria Queen bombs have little to no salt, so treat them as the spice blend only and salt the liquid early; it took about 4 tsp for 8 cups of liquid. Salting late left the meat a little underseasoned next to the consommé. Next time: half chuck, half beef shank, and toast and blend dried guajillo, ancho and arbol instead of relying on the bombs alone.",
     "related": [
       "birria-naan-wrap",
       "birria-chili",
@@ -1580,5 +1593,89 @@ window.PERSONAL_RECIPES = [
     "fat_total": 108,
     "servings": 3,
     "image": "assets/img/chipotle-tomato-soup-pasta.jpg"
+  },
+  {
+    "title": "Pepper Jelly Burrata Double Smash Burgers",
+    "slug": "pepper-jelly-burrata-smash-burgers",
+    "tags": [
+      "Beef",
+      "High Protein",
+      "Dinner",
+      "Quick",
+      "Comfort Food"
+    ],
+    "summary": "Double smash patties from 93/7 beef on sesame potato rolls spread with burrata and hot pepper jelly, with smoked Havarti melted between the patties and a pile of pickles. Sweet heat, cream and smoke on a lean burger.",
+    "ingredients": [
+      "1 lb 93/7 ground beef, divided into four ~4 oz balls",
+      "Avocado oil spray",
+      "2 Martin's big sesame potato rolls",
+      "~2 tbsp BelGioioso burrata (about 1 tbsp per burger)",
+      "~2 tbsp Fischer & Wieser Texas Heat pepper jelly (about 1 tbsp per burger)",
+      "~2 oz post-oak smoked Havarti, shredded (about 1 oz per burger)",
+      "Dill pickle chips, lots",
+      "Kosher salt"
+    ],
+    "steps": [
+      "Get a cast iron pan very hot and give it a light spray of avocado oil.",
+      "Set a beef ball in the pan and smash it hard and thin. Salt the top, let the crust form, then scrape under it and flip. Cook briefly on the second side and pull it. Repeat for all four patties.",
+      "Spread burrata on one half of each roll and pepper jelly on the other.",
+      "Stack two patties per roll with the shredded Havarti between them so the heat of the patties melts it.",
+      "Top with a lot of pickles and close it up."
+    ],
+    "notes": "One of the best things to come out of this kitchen. The idea came from an H-E-B sample of pepper jelly and cream cheese on a cracker; burrata stands in for the cream cheese. If the pan has room, put the Havarti on the patties and steam it under a lid; sandwiching it between hot patties works too. The jelly is about 35 cal per tablespoon, nearly all sugar, so a tablespoon per burger is plenty. Macros are for both burgers: ~84g carbs, ~62g fat, ~5g fiber.",
+    "related": [
+      "everyday-mustard-smash-burger",
+      "onion-smash-sliders",
+      "skyr-chipotle-crema"
+    ],
+    "kcal_total": 1420,
+    "protein_total": 125,
+    "servings": 2
+  },
+  {
+    "title": "Everyday Mustard Smash Double",
+    "slug": "everyday-mustard-smash-burger",
+    "tags": [
+      "Beef",
+      "High Protein",
+      "Dinner",
+      "Quick",
+      "Comfort Food"
+    ],
+    "summary": "The house burger: 93/7 beef smashed into a scoop of mustard on cast iron, doubled up with cheese on a Martin's potato roll, with pickles and a quick mayo-ketchup-Worcestershire burger sauce.",
+    "ingredients": [
+      "--- BURGERS ---",
+      "1 lb 93/7 ground beef, divided into four balls",
+      "Dijon or whole grain mustard, a small scoop per patty",
+      "Avocado oil spray",
+      "Kosher salt",
+      "Cheese: American slices, or whatever shredded cheddar is in the fridge",
+      "2 Martin's potato rolls",
+      "Dill pickle chips, lots",
+      "--- BURGER SAUCE ---",
+      "2 parts mayo (Duke's)",
+      "1 part ketchup",
+      "A few dashes Worcestershire sauce",
+      "Garlic powder",
+      "Onion powder",
+      "Good pinch of kosher salt",
+      "Fresh cracked black pepper"
+    ],
+    "steps": [
+      "Sauce: stir together the mayo, ketchup, Worcestershire, garlic powder, onion powder and salt. Crack in black pepper and stir once more.",
+      "Heat a cast iron pan until very hot. Add a light spray of avocado oil and a scoop of mustard where the patty will go.",
+      "Set a beef ball on the mustard and smash it thin. Salt the top and let it get a good sear.",
+      "Flip, add cheese, and steam it for a few seconds with a splash of water under a lid. Pull the patty and repeat with the rest.",
+      "Build: sauce on the roll, two patties, a pile of pickles."
+    ],
+    "notes": "Lean beef works here because a smash burger is about crust, and the mustard sears into the patty. Shredded cheddar melts fine with the steam even without the emulsifying salts in American cheese. Macros are estimates for two doubles with about a tablespoon of sauce each. For a richer version, see the pepper jelly burrata burger; a cottage cheese pimento spread in place of the cheese is on the to-try list.",
+    "related": [
+      "pepper-jelly-burrata-smash-burgers",
+      "onion-smash-sliders",
+      "potato-wedge-taco-bowl"
+    ],
+    "kcal_total": 1370,
+    "protein_total": 120,
+    "servings": 2
   }
 ];
