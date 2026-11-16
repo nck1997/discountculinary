@@ -1423,6 +1423,212 @@ body.modal-open {
   }
 }
 
+/* ------------------------------------------------------------ roll the dice */
+
+.roll-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: var(--s6);
+  align-items: start;
+  margin-bottom: var(--s7);
+}
+
+.roll section {
+  margin-bottom: var(--s7);
+}
+
+.roll-controls {
+  display: grid;
+  gap: var(--s3);
+}
+
+.roll-controls p {
+  margin: 0;
+}
+
+.dice-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--s4);
+  margin-bottom: var(--s4);
+}
+
+.dice-grid.rules {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.die {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s3);
+  min-height: 148px;
+  padding: var(--s4);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  background-color: var(--sheet);
+  color: var(--ink);
+  font-family: var(--font-text);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 1px 1px var(--shadow-soft), 0 10px 10px -8px var(--shadow);
+}
+
+.dice-grid.rules .die {
+  min-height: 112px;
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.die:hover {
+  border-color: var(--tape-ink);
+}
+
+.die.held {
+  background-color: var(--highlighter);
+}
+
+.die-role,
+.die-hold {
+  font-size: var(--t-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+.die.held .die-hold {
+  color: var(--ink);
+}
+
+.die-name {
+  font-size: var(--t-lead);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.read-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: var(--s6);
+  align-items: start;
+}
+
+.bars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s5) var(--s6);
+}
+
+.bar-group .eyebrow {
+  margin-bottom: var(--s2);
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--s3);
+  min-height: 28px;
+}
+
+.bar-label {
+  font-size: var(--t-small);
+  font-weight: 600;
+}
+
+.bar-track {
+  display: block;
+  height: 12px;
+  border: 1px solid var(--ink);
+  background-color: var(--sheet);
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background-color: var(--ink);
+}
+
+.save-form {
+  display: grid;
+  gap: var(--s4);
+  max-width: 720px;
+}
+
+.save-form p {
+  margin: 0;
+}
+
+textarea.text-input {
+  padding: var(--s3);
+  border: 2px solid var(--ink);
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.log-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--s4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.log-item h3 {
+  margin: var(--s1) 0 var(--s2);
+  font-size: var(--t-lead);
+}
+
+.log-item p {
+  margin: 0 0 var(--s2);
+}
+
+.log-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-top: var(--s3);
+}
+
+.flavor-parts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s5) var(--s6);
+  margin: 0;
+}
+
+.flavor-parts dt {
+  font-weight: 700;
+}
+
+.flavor-parts dd {
+  margin: var(--s1) 0 0;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 860px) {
+  .roll-intro,
+  .read-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dice-grid.rules,
+  .bars,
+  .flavor-parts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .die {
+    min-height: 120px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .print,
   .compact-pinned-bar {

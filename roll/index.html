@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roll the DICE — DICE</title>
+<meta name="description" content="Roll five ingredients, a banned crutch and a technique, then invent a dish from them.">
+<link rel="canonical" href="https://nck1997.github.io/discountculinary/roll/">
+<meta property="og:title" content="Roll the DICE — DICE">
+<meta property="og:description" content="Roll five ingredients, a banned crutch and a technique, then invent a dish from them.">
+<meta property="og:url" content="https://nck1997.github.io/discountculinary/roll/">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Libre+Franklin:wght@400;600;700&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+  <a class="brand" href="../index.html">
+    <img src="../assets/mark.svg" alt="" width="56" height="56">
+    <span class="brand-name">DICE<span class="brand-by">By Nischal Kelwadkar</span><span class="brand-sub">Domestic Institute of Culinary Education</span></span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="../index.html">Recipes</a>
+    <a href="../roll/index.html" aria-current="page">Roll</a>
+    <a href="../lab/index.html">Macro Lab</a>
+  </nav>
+</header>
+<main class="roll">
+<div class="page-title"><div class="tape-wrap flat"><h1 class="tape">Roll the DICE</h1></div></div>
+<div class="roll-intro">
+  <div>
+    <p class="summary">Five ingredients, one thing you're not allowed to lean on, and a technique to work in. Make something that doesn't exist yet.</p>
+    <p class="section-note">The dice are weighted toward sour, heat, creamy and savory, and they avoid handing over a dish that's already on this site. The ingredients could work together. Nobody promised they will.</p>
+  </div>
+  <div class="note">
+    <span class="note-title">House rules</span>
+    <p>Salt, pepper, oil and water are free.</p>
+    <p>Two extra ingredients of your choice.</p>
+    <p>Write it down the same night.</p>
+  </div>
+</div>
+
+<section aria-labelledby="setup-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Setup</p><h2 id="setup-h">How risky?</h2></div>
+    <p class="section-note">Tap a die after rolling to hold it, then roll the rest again.</p>
+  </div>
+  <div class="roll-controls">
+    <div class="tag-row" role="group" aria-label="Risk">
+      <button type="button" class="mark-toggle" data-risk="safe" aria-pressed="false">Safe: one food lane</button>
+      <button type="button" class="mark-toggle" data-risk="stretch" aria-pressed="true">Stretch: lanes overlap</button>
+      <button type="button" class="mark-toggle" data-risk="wild" aria-pressed="false">Wild: one outsider</button>
+    </div>
+    <div class="tag-row">
+      <button type="button" class="mark-toggle" id="houseOnly" aria-pressed="false">Only what's usually in my kitchen</button>
+      <button type="button" class="mark-toggle" id="techToggle" aria-pressed="true">Technique die</button>
+    </div>
+    <p><button type="button" class="btn primary" id="rollBtn">Roll</button></p>
+  </div>
+</section>
+
+<div id="rollArea" hidden>
+<section aria-labelledby="dice-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">The roll</p><h2 id="dice-h">Cook with these</h2></div>
+    <p><button type="button" class="btn small" id="copyRoll">Copy as text</button></p>
+  </div>
+  <div class="dice-grid" id="diceGrid" aria-live="polite"></div>
+  <div class="dice-grid rules" id="ruleGrid"></div>
+</section>
+
+<section aria-labelledby="read-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Read the roll</p><h2 id="read-h">What these five bring</h2></div>
+    <p class="section-note">Each ingredient is scored 0 to 3 on ten things. A short bar is a gap to fill with technique or your two extras.</p>
+  </div>
+  <div class="read-grid">
+    <div class="sheet bars" id="bars"></div>
+    <div class="note green" id="readNote"></div>
+  </div>
+</section>
+
+<section aria-labelledby="save-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">After you cook</p><h2 id="save-h">Log it</h2></div>
+    <p class="section-note">Saved in this browser only. Copy a logged roll as text to paste it anywhere else.</p>
+  </div>
+  <div class="sheet ruled save-form">
+    <div>
+      <label class="field-label" for="dishName">What did it turn into?</label>
+      <input class="text-input" id="dishName" type="text" autocomplete="off">
+    </div>
+    <div class="tag-row" role="group" aria-label="Verdict">
+      <button type="button" class="mark-toggle" data-verdict="Make again" aria-pressed="false">Make again</button>
+      <button type="button" class="mark-toggle" data-verdict="Fine" aria-pressed="false">Fine</button>
+      <button type="button" class="mark-toggle" data-verdict="Never again" aria-pressed="false">Never again</button>
+    </div>
+    <div>
+      <label class="field-label" for="dishNotes">What worked, what didn't</label>
+      <textarea class="text-input" id="dishNotes" rows="4"></textarea>
+    </div>
+    <p><button type="button" class="btn" id="saveRoll">Save this roll</button> <span class="section-note" id="saveStatus" aria-live="polite"></span></p>
+  </div>
+</section>
+</div>
+
+<section aria-labelledby="log-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Logbook</p><h2 id="log-h">Past rolls</h2></div>
+  </div>
+  <p class="section-note" id="logEmpty">Nothing logged yet.</p>
+  <ul class="log-list" id="logList"></ul>
+</section>
+
+<section aria-labelledby="flavor-h">
+  <div class="section-heading">
+    <div><p class="eyebrow">Background</p><h2 id="flavor-h">What flavor is made of</h2></div>
+    <p class="section-note">Standard sensory science. The dice score taste, heat, two textures and two aromas because those are the parts an ingredient list can tell you about.</p>
+  </div>
+  <dl class="sheet flavor-parts"><div><dt>Taste</dt><dd>What the tongue registers: salty, sour, sweet, bitter and umami. Five, and that&#x27;s the whole list.</dd></div><div><dt>Aroma</dt><dd>Most of what gets called taste is smell. Cumin, basil, smoke and browned butter are all aroma, and aroma is what tells you which cuisine you&#x27;re in.</dd></div><div><dt>Texture</dt><dd>Creamy, crunchy, chewy, juicy. A dish with one texture gets boring by the third bite.</dd></div><div><dt>Physical</dt><dd>Sensations that are neither taste nor smell: chile heat, the tingle of mustard, the cool of mint, temperature.</dd></div><div><dt>Sight</dt><dd>Color, char and how it sits on the plate set the expectation before the first bite.</dd></div><div><dt>The person</dt><dd>Memory, mood and what you grew up eating. The same plate is a different dish to two people.</dd></div></dl>
+</section>
+</main>
+
+<footer class="footer">
+  <p>DICE · Domestic Institute of Culinary Education · by Nischal Kelwadkar.</p>
+  <p>Calories and protein are home-kitchen estimates, per serving unless it says otherwise.</p>
+  <p><a href="../index.html">All recipes</a> · <a href="../roll/index.html">Roll the DICE</a> · <a href="../lab/index.html">Macro Lab</a></p>
+</footer>
+</div>
+<script src="../data/pantry.js"></script>
+<script src="../data/personal-recipes.js"></script>
+<script src="../assets/roll.js"></script>
+</body>
+</html>

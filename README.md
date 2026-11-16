@@ -13,6 +13,9 @@ Eventually: [discountculinary.com](https://discountculinary.com).
   filters, minimum protein and maximum calories per serving.
 - **Recipe pages** (`recipes/<slug>.html`) — one real page per recipe for search engines
   (JSON-LD Recipe schema), tick-off ingredients, print view, and "Build a meal around this".
+- **Roll the DICE** (`roll/`) — rolls five ingredients, one banned crutch and a technique to
+  invent a dish from. Weighted toward the house palate, avoids combinations that are already a
+  recipe here. The ingredient pool, palate weights, bans and techniques live in `pantry.json`.
 - **Macro Lab** (`lab/`) — the calorie slider: set calories, protein and fiber, pin what you
   already know you're eating, and it fills in the rest from these recipes, pantry staples,
   Taco Bell, Chipotle, Panda Express, CAVA and Wingstop. (Merged in from the
@@ -21,6 +24,8 @@ Eventually: [discountculinary.com](https://discountculinary.com).
 ## Structure
 ```
 recipes.json            ← single source of truth for recipes
+pantry.json             ← ingredient pool and rules for Roll the DICE
+IDEAS.md                ← to-try list and kitchen notes (not part of the build)
 build.py                ← generates the whole site from recipes.json
 DESIGN.md               ← the rules of the look (also loaded into Raven as a taste profile)
 assets/site.css         ← one stylesheet for every page
