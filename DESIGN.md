@@ -32,6 +32,7 @@ recipes are the point. Everything else stays quiet.
 
 ## Motion
 - Motion is limited to small paper-like responses (a note lifting on hover) and respects prefers-reduced-motion. (warn)
+- One exception: the dice on the Roll page tumble and land when rolled. Still off under prefers-reduced-motion. (nit)
 
 ## Voice
 - Plain, dry, first-person home cook. The Institute joke appears in small doses. (warn)

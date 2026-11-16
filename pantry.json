@@ -1,5 +1,5 @@
 {
- "_about": "Ingredient pool for Roll the DICE. role = the job it does on a plate. lanes = food traditions it shows up in (mex, ind, ita, eas, ame, med). brings = 1-3 on salty, sour, sweet, bitter, umami, heat, rich, crunch, fresh, smoke. stock = 3 always in the house, 2 often, 1 would have to buy. key = lowercase text used to spot this ingredient inside existing recipes.",
+ "_about": "Ingredient pool for Roll the DICE. role = the job it does on a plate (protein = meat or fish main; boost = beans, eggs and other second proteins). lanes = food traditions it shows up in (mex, ind, ita, eas, ame, med). brings = 1-3 on salty, sour, sweet, bitter, umami, heat, rich, crunch, fresh, smoke. stock = 3 always in the house, 2 often, 1 would have to buy. key = lowercase text used to spot this ingredient inside existing recipes.",
  "palate": {
   "sour": 3,
   "heat": 3,
@@ -10,7 +10,7 @@
   "fresh": 1.5,
   "salty": 1,
   "bitter": 0.8,
-  "sweet": 0.3
+  "sweet": 1.0
  },
  "bans": [
   {
@@ -170,7 +170,7 @@
   },
   {
    "name": "Eggs",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "ame",
     "eas",
@@ -203,7 +203,7 @@
   },
   {
    "name": "Cannellini beans",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "ita",
     "med",
@@ -218,7 +218,7 @@
   },
   {
    "name": "Black beans",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "mex",
     "ame"
@@ -231,7 +231,7 @@
   },
   {
    "name": "Chickpeas",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "ind",
     "med"
@@ -276,7 +276,7 @@
   },
   {
    "name": "Paneer",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "ind"
    ],
@@ -288,7 +288,7 @@
   },
   {
    "name": "Red lentils",
-   "role": "protein",
+   "role": "boost",
    "lanes": [
     "ind",
     "med"
@@ -1550,6 +1550,97 @@
    },
    "stock": 2,
    "key": "berr"
+  },
+  {
+   "name": "Sirloin or flank steak",
+   "role": "protein",
+   "lanes": [
+    "mex",
+    "ame",
+    "eas"
+   ],
+   "brings": {
+    "umami": 3,
+    "rich": 1
+   },
+   "stock": 1,
+   "key": "steak"
+  },
+  {
+   "name": "Turkey sausage",
+   "role": "protein",
+   "lanes": [
+    "ame",
+    "ita",
+    "mex"
+   ],
+   "brings": {
+    "umami": 2,
+    "salty": 1,
+    "rich": 1
+   },
+   "stock": 2,
+   "key": "sausage"
+  },
+  {
+   "name": "Pineapple",
+   "role": "sweet",
+   "lanes": [
+    "mex",
+    "eas"
+   ],
+   "brings": {
+    "sweet": 3,
+    "sour": 2,
+    "fresh": 1
+   },
+   "stock": 1,
+   "key": "pineapple"
+  },
+  {
+   "name": "Apple",
+   "role": "sweet",
+   "lanes": [
+    "ame",
+    "med"
+   ],
+   "brings": {
+    "sweet": 2,
+    "sour": 1,
+    "crunch": 2
+   },
+   "stock": 2,
+   "key": "apple"
+  },
+  {
+   "name": "Dates",
+   "role": "sweet",
+   "lanes": [
+    "med",
+    "ind"
+   ],
+   "brings": {
+    "sweet": 3,
+    "rich": 1
+   },
+   "stock": 1,
+   "key": "date"
+  },
+  {
+   "name": "Caramelized onions",
+   "role": "sweet",
+   "lanes": [
+    "ame",
+    "ita",
+    "ind",
+    "med"
+   ],
+   "brings": {
+    "sweet": 2,
+    "umami": 2
+   },
+   "stock": 2,
+   "key": "caramelized onion"
   }
  ]
 }

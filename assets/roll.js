@@ -18,14 +18,15 @@
   var WORTH_FLAGGING = ["sour", "heat", "rich", "umami", "crunch", "fresh"];
   var ROLE_LABEL = {
     protein: "Main", base: "Base", veg: "Vegetable", creamy: "Creamy", acid: "Acid",
-    heat: "Heat", umami: "Savory", crunch: "Crunch", fresh: "Fresh", spice: "Spice", sweet: "Sweet"
+    heat: "Heat", umami: "Savory", crunch: "Crunch", fresh: "Fresh", spice: "Spice", sweet: "Sweet",
+    boost: "Extra protein"
   };
   var LANE_LABEL = {
     mex: "Mexican", ind: "Indian", ita: "Italian", eas: "East Asian",
     ame: "American", med: "Mediterranean"
   };
   var ACCENT_WEIGHT = {
-    creamy: 3, acid: 3, heat: 3, umami: 2, crunch: 2, fresh: 2, spice: 1.5, veg: 1.5, sweet: 0.4
+    creamy: 3, acid: 3, heat: 3, umami: 2, crunch: 2, fresh: 2, spice: 1.5, veg: 1.5, boost: 1.5, sweet: 1
   };
   var STOCK_FACTOR = [0, 0.45, 1, 1.4];
 
@@ -43,7 +44,6 @@
     var score = 0, k;
     for (k in ing.brings) score += ing.brings[k] * (pantry.palate[k] || 0);
     var w = (1 + score / 10) * STOCK_FACTOR[ing.stock];
-    if (ing.role === "sweet") w *= 0.6;
     return w;
   }
 
@@ -131,16 +131,20 @@
     return best ? { dice: best, relaxed: true } : null;
   }
 
-  function rollBan(pantry, dice, rng) {
+  /* avoid: ban texts rolled recently, so the same few don't come up back to back. */
+  function rollBan(pantry, dice, rng, avoid) {
     var keys = dice.map(function (d) { return d.key; });
     var ok = pantry.bans.filter(function (b) {
       return !b.blocks.some(function (blk) { return keys.indexOf(blk) !== -1; });
     });
-    return pickWeighted(ok.length ? ok : pantry.bans, function () { return 1; }, rng).text;
+    var fresh = ok.filter(function (b) { return (avoid || []).indexOf(b.text) === -1; });
+    var from = fresh.length ? fresh : (ok.length ? ok : pantry.bans);
+    return pickWeighted(from, function () { return 1; }, rng).text;
   }
 
-  function rollTechnique(pantry, rng) {
-    return pickWeighted(pantry.techniques, function () { return 1; }, rng);
+  function rollTechnique(pantry, rng, avoid) {
+    var fresh = pantry.techniques.filter(function (t) { return (avoid || []).indexOf(t) === -1; });
+    return pickWeighted(fresh.length ? fresh : pantry.techniques, function () { return 1; }, rng);
   }
 
   function profile(dice) {
@@ -171,7 +175,8 @@
   var state = {
     risk: "stretch", houseOnly: false, technique: true,
     dice: [null, null, null, null, null], held: [false, false, false, false, false],
-    ban: null, banHeld: false, tech: null, techHeld: false, relaxed: false, verdict: ""
+    ban: null, banHeld: false, tech: null, techHeld: false, relaxed: false, verdict: "",
+    recentBans: [], recentTechs: [], rolling: false
   };
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (s) {
@@ -187,15 +192,65 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(list)); return true; } catch (e) { return false; }
   }
 
+  function remember(list, value) {
+    list.push(value);
+    while (list.length > 4) list.shift();
+  }
+
   function roll() {
+    if (state.rolling) return;
     var held = state.dice.map(function (d, i) { return state.held[i] ? d : null; });
     var result = rollIngredients(pantry, recipes, state, held, Math.random);
     if (!result) return;
     state.dice = result.dice;
     state.relaxed = result.relaxed;
-    if (!state.banHeld || !state.ban) state.ban = rollBan(pantry, state.dice, Math.random);
-    if (!state.techHeld || !state.tech) state.tech = rollTechnique(pantry, Math.random);
+    var newBan = !state.banHeld || !state.ban, newTech = !state.techHeld || !state.tech;
+    if (newBan) { state.ban = rollBan(pantry, state.dice, Math.random, state.recentBans); remember(state.recentBans, state.ban); }
+    if (newTech) { state.tech = rollTechnique(pantry, Math.random, state.recentTechs); remember(state.recentTechs, state.tech); }
     render();
+    tumble(held, newBan, newTech);
+  }
+
+  /* Tumble every die that changed: names flicker past, then each die lands in turn. */
+  function tumble(held, newBan, newTech) {
+    var reduce = root.matchMedia && root.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    var jobs = [];
+    Array.prototype.forEach.call(document.querySelectorAll("#diceGrid .die"), function (el, i) {
+      if (held[i]) return;
+      var role = state.dice[i].role;
+      jobs.push({ el: el, names: pantry.ingredients.filter(function (p) { return p.role === role; })
+        .map(function (p) { return p.name; }) });
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("#ruleGrid .die"), function (el) {
+      var kind = el.getAttribute("data-kind");
+      if (kind === "ban" && newBan) jobs.push({ el: el, names: pantry.bans.map(function (b) { return b.text; }) });
+      if (kind === "tech" && newTech) jobs.push({ el: el, names: pantry.techniques });
+    });
+    if (!jobs.length) return;
+    state.rolling = true;
+    $("rollBtn").disabled = true;
+    $("rollArea").classList.add("is-rolling");
+    jobs.forEach(function (job, n) {
+      var nameEl = job.el.querySelector(".die-name"), finalName = nameEl.textContent;
+      job.el.classList.add("rolling");
+      job.el.style.animationDelay = (n * 40) + "ms";
+      var timer = setInterval(function () {
+        nameEl.textContent = job.names[Math.floor(Math.random() * job.names.length)];
+      }, 80);
+      setTimeout(function () {
+        clearInterval(timer);
+        nameEl.textContent = finalName;
+        job.el.classList.remove("rolling");
+        job.el.classList.add("landed");
+        setTimeout(function () { job.el.classList.remove("landed"); }, 320);
+        if (n === jobs.length - 1) {
+          state.rolling = false;
+          $("rollBtn").disabled = false;
+          $("rollArea").classList.remove("is-rolling");
+        }
+      }, 650 + n * 190);
+    });
   }
 
   function dieButton(kind, index, label, name, held) {
@@ -306,6 +361,7 @@
       return;
     }
     if (t.classList.contains("die")) {
+      if (state.rolling) return;
       var kind = t.getAttribute("data-kind"), i = +t.getAttribute("data-index");
       if (kind === "ing") state.held[i] = !state.held[i];
       else if (kind === "ban") state.banHeld = !state.banHeld;

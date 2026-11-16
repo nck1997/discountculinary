@@ -1507,6 +1507,42 @@ body.modal-open {
   line-height: 1.25;
 }
 
+@keyframes die-tumble {
+  0% { transform: translateY(0) rotate(0deg); }
+  20% { transform: translateY(-14px) rotate(-7deg); }
+  40% { transform: translateY(2px) rotate(6deg); }
+  60% { transform: translateY(-9px) rotate(-5deg); }
+  80% { transform: translateY(1px) rotate(4deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+@keyframes die-land {
+  0% { transform: translateY(-10px) rotate(-3deg); }
+  60% { transform: translateY(3px) rotate(1deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.die.rolling {
+  animation: die-tumble 0.42s linear infinite;
+  box-shadow: 0 2px 2px var(--shadow-soft), 0 22px 16px -12px var(--shadow);
+}
+
+.die.rolling .die-name {
+  color: var(--ink-soft);
+}
+
+.die.rolling .die-hold {
+  visibility: hidden;
+}
+
+.die.landed {
+  animation: die-land 0.3s ease-out;
+}
+
+.is-rolling .read-grid {
+  opacity: 0.25;
+}
+
 .read-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
